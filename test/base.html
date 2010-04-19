@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>{{ object.title }}</title>
+  </head>
+
+  <body>
+    <h2>Debugging informations</h2>
+
+    <p style="font-size: 1.2em;">Current user is: <b>{{ user }}</b> / Site: <b>{{ site.domain }}</b> / Language code: <b>{{ LANGUAGE_CODE }}</b></p>
+
+    <hr />
+
+    <h1>Page contents</h1>
+    
+    {{ object.content }}
+
+    <div class="footer">
+     <hr /><p>Automatically generated at {% now "r" %}</p>
+    </div>
+
+ </body>
+</html>

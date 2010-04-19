@@ -1,0 +1,21 @@
+[
+  {
+    "pk": 1, 
+    "model": "flatties.page", 
+    "fields": {
+      "updated": "2010-04-19 18:17:41", 
+      "language": "en", 
+      "title": "A test page", 
+      "url": "test", 
+      "template_name": "base.html", 
+      "markup": "R", 
+      "created": "2010-04-19 18:17:41", 
+      "sites": [
+        1
+      ], 
+      "content": "<p>This is a test.</p>\r\n\r\n<p>This is another paragraph.</p>", 
+      "user": "X", 
+      "groups": []
+    }
+  }
+]
