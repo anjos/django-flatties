@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-20 17:45+0200\n"
-"PO-Revision-Date: 2010-04-20 17:57\n"
+"POT-Creation-Date: 2010-04-20 17:58+0200\n"
+"PO-Revision-Date: 2010-04-20 17:59\n"
 "Last-Translator: Admin Adminston <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgstr "HTML puro"
 
 #: models.py:24
 msgid "ReStructured Text"
-msgstr "ReStructured Text"
+msgstr "Texto ReStruturado"
 
 #: models.py:25
 msgid "Textile"
@@ -94,7 +94,7 @@ msgstr "O título da página será extraído desta variável. Não são permitid
 
 #: models.py:40
 msgid "Markup"
-msgstr "Markup"
+msgstr "Marcação"
 
 #: models.py:42
 msgid "Choose here if you need some preprocessing of the contents based on a markup language. By default, we will display exactly what you write in the content field."
