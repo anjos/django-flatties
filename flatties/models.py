@@ -45,7 +45,7 @@ class Page(models.Model):
       help_text=_('These are the contents of the page. You can use templates and markup language if you decide to do so.'))
 
   template_name = models.CharField(_('template name'), max_length=70,
-      blank=True, help_text=_("Example: 'flatties/about.html'. If this isn't provided, the system will use 'flatties/default.html'."))
+      blank=True, null=True, default="flatties/default.html", help_text=_("Example: 'flatties/about.html'. If this isn't provided, the system will use 'flatties/default.html'."))
 
   language = models.CharField(_('Language'), max_length=8, null=False, blank=False, help_text=_('Choose the language to which the name applies to.'), choices=settings.LANGUAGES, default=settings.LANGUAGE_CODE)
 

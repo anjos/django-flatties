@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-20 17:45+0200\n"
+"PO-Revision-Date: 2010-04-20 17:57\n"
+"Last-Translator: Admin Adminston <admin@example.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.5.3\n"
+
+#: admin.py:22 admin.py:33
+msgid "Suggest a translation using Google!"
+msgstr "Sugerir uma tradução usando Google!"
+
+#: admin.py:57
+msgid "Translations"
+msgstr "Traduções"
+
+#: admin.py:60 models.py:28
+msgid "URL"
+msgstr "URL"
+
+#: admin.py:62
+msgid "Example: 'about/contact'. Do not write leading and trailing slashes - they will be added automatically."
+msgstr "Examplo: 'about/contact'. Não coloque barras no início e no final - elas serão adicionadas automaticamente."
+
+#: admin.py:63
+msgid "This value must start/end with a letter, digit or underscore. It must contain only letters, numbers, underscores, dashes or slashes."
+msgstr "Este valor deve começar com uma letra, dígito ou sublinhado. Deve conter somente letras, números, sublinhados, traços ou barras."
+
+#: admin.py:77
+msgid "Permissions"
+msgstr "Permissões"
+
+#: models.py:14
+msgid "Any user"
+msgstr "Qualquer usuário"
+
+#: models.py:15
+msgid "Authenticated"
+msgstr "Autenticado"
+
+#: models.py:16
+msgid "Anonymous"
+msgstr "Anônimo"
+
+#: models.py:17
+msgid "Administrator"
+msgstr "Adminstrador"
+
+#: models.py:18
+msgid "Staff"
+msgstr "Equipe"
+
+#: models.py:19
+msgid "Belonging to a group"
+msgstr "Pertencendo a um grupo"
+
+#: models.py:23
+msgid "Raw HTML"
+msgstr "HTML puro"
+
+#: models.py:24
+msgid "ReStructured Text"
+msgstr "ReStructured Text"
+
+#: models.py:25
+msgid "Textile"
+msgstr "Textile"
+
+#: models.py:31
+msgid "Created"
+msgstr "Criado"
+
+#: models.py:34
+msgid "Updated"
+msgstr "Atualizado"
+
+#: models.py:37 models.py:108
+msgid "title"
+msgstr "título"
+
+#: models.py:38
+msgid "The title of the page will be extracted from this variable. No markup or variable resolution is allowed."
+msgstr "O título da página será extraído desta variável. Não são permitidos markups ou variáveis."
+
+#: models.py:40
+msgid "Markup"
+msgstr "Markup"
+
+#: models.py:42
+msgid "Choose here if you need some preprocessing of the contents based on a markup language. By default, we will display exactly what you write in the content field."
+msgstr "Escolha aqui se necessita de algum pré-processamento do conteúdo baseado em uma linguagem de marcação. Por omissão, será mostrado exatamento o que você colocar neste campo."
+
+#: models.py:44 models.py:110
+msgid "content"
+msgstr "conteúdo"
+
+#: models.py:45
+msgid "These are the contents of the page. You can use templates and markup language if you decide to do so."
+msgstr "Este é o conteúdo da página. Você pode usar modelos e linguagem de marcação se assim decidir."
+
+#: models.py:47
+msgid "template name"
+msgstr "Nome do modelo"
+
+#: models.py:48
+msgid "Example: 'flatties/about.html'. If this isn't provided, the system will use 'flatties/default.html'."
+msgstr "Examplo: 'flatties/about.html'. Se não for provido, o sistema utilisará 'flatties/default.html'."
+
+#: models.py:50 models.py:106
+msgid "Language"
+msgstr "Idioma"
+
+#: models.py:50
+msgid "Choose the language to which the name applies to."
+msgstr "Escolha o idioma ao qual o nome se aplica."
+
+#: models.py:52
+msgid "User type"
+msgstr "Tipo de usuário"
+
+#: models.py:53
+msgid "Set this to determine if the page will be showed only to a subgroup of users."
+msgstr "Ajuste esta opção para determinar se a página será mostrada apenas a um sub-conjunto de usuários."
+
+#: models.py:56
+msgid "If you have set \"For users in a group\" as the user type choice, select here the groups of users which will see this page. Otherwise, this parameter is ignored."
+msgstr "Se você ajustou \"Para usuários em um grupo\" como o tipo de opção, selecione aqui os grupos de usuários que poderão visualizar esta página. De outra forma, este parâmetro é ignorado."
+
+#: models.py:59
+msgid "Select here the sites to which this page is effective."
+msgstr "Selecione aqui os sites aos quais esta página se aplica."
+
+#: models.py:94
+msgid "page"
+msgstr "página"
+
+#: models.py:95
+msgid "pages"
+msgstr "páginas"
+
+#: models.py:106
+msgid "Choose the language to which this variant applies to."
+msgstr "Escolha o idioma ao qual esta variante se aplica."
+
+#: models.py:113
+msgid "page translation"
+msgstr "tradução de página"
+
+#: models.py:114
+msgid "page translations"
+msgstr "traduções de página"

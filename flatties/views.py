@@ -15,6 +15,7 @@ from models import Page
 def view_page(request, url):
   obj = Page.objects.get(url=url)
   if not obj.is_allowed(request.user): raise ObjectDoesNotExist 
-  return render_to_response(obj.template_name, { 'object': obj, }, 
+  template = obj.template_name
+  if not template: template = "flatties/default.html"
+  return render_to_response(template, { 'object': obj, }, 
                             context_instance=RequestContext(request))
-

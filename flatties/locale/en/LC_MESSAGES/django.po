@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-20 17:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin.py:22 admin.py:33
+msgid "Suggest a translation using Google!"
+msgstr ""
+
+#: admin.py:57
+msgid "Translations"
+msgstr ""
+
+#: admin.py:60 models.py:28
+msgid "URL"
+msgstr ""
+
+#: admin.py:62
+msgid ""
+"Example: 'about/contact'. Do not write leading and trailing slashes - they "
+"will be added automatically."
+msgstr ""
+
+#: admin.py:63
+msgid ""
+"This value must start/end with a letter, digit or underscore. It must "
+"contain only letters, numbers, underscores, dashes or slashes."
+msgstr ""
+
+#: admin.py:77
+msgid "Permissions"
+msgstr ""
+
+#: models.py:14
+msgid "Any user"
+msgstr ""
+
+#: models.py:15
+msgid "Authenticated"
+msgstr ""
+
+#: models.py:16
+msgid "Anonymous"
+msgstr ""
+
+#: models.py:17
+msgid "Administrator"
+msgstr ""
+
+#: models.py:18
+msgid "Staff"
+msgstr ""
+
+#: models.py:19
+msgid "Belonging to a group"
+msgstr ""
+
+#: models.py:23
+msgid "Raw HTML"
+msgstr ""
+
+#: models.py:24
+msgid "ReStructured Text"
+msgstr ""
+
+#: models.py:25
+msgid "Textile"
+msgstr ""
+
+#: models.py:31
+msgid "Created"
+msgstr ""
+
+#: models.py:34
+msgid "Updated"
+msgstr ""
+
+#: models.py:37 models.py:108
+msgid "title"
+msgstr ""
+
+#: models.py:38
+msgid ""
+"The title of the page will be extracted from this variable. No markup or "
+"variable resolution is allowed."
+msgstr ""
+
+#: models.py:40
+msgid "Markup"
+msgstr ""
+
+#: models.py:42
+msgid ""
+"Choose here if you need some preprocessing of the contents based on a markup "
+"language. By default, we will display exactly what you write in the content "
+"field."
+msgstr ""
+
+#: models.py:44 models.py:110
+msgid "content"
+msgstr ""
+
+#: models.py:45
+msgid ""
+"These are the contents of the page. You can use templates and markup "
+"language if you decide to do so."
+msgstr ""
+
+#: models.py:47
+msgid "template name"
+msgstr ""
+
+#: models.py:48
+msgid ""
+"Example: 'flatties/about.html'. If this isn't provided, the system will use "
+"'flatties/default.html'."
+msgstr ""
+
+#: models.py:50 models.py:106
+msgid "Language"
+msgstr ""
+
+#: models.py:50
+msgid "Choose the language to which the name applies to."
+msgstr ""
+
+#: models.py:52
+msgid "User type"
+msgstr ""
+
+#: models.py:53
+msgid ""
+"Set this to determine if the page will be showed only to a subgroup of users."
+msgstr ""
+
+#: models.py:56
+msgid ""
+"If you have set \"For users in a group\" as the user type choice, select "
+"here the groups of users which will see this page. Otherwise, this parameter "
+"is ignored."
+msgstr ""
+
+#: models.py:59
+msgid "Select here the sites to which this page is effective."
+msgstr ""
+
+#: models.py:94
+msgid "page"
+msgstr ""
+
+#: models.py:95
+msgid "pages"
+msgstr ""
+
+#: models.py:106
+msgid "Choose the language to which this variant applies to."
+msgstr ""
+
+#: models.py:113
+msgid "page translation"
+msgstr ""
+
+#: models.py:114
+msgid "page translations"
+msgstr ""

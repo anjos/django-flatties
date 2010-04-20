@@ -7,7 +7,7 @@ LANGUAGES=en pt_BR fr es
 
 # These are helpers
 admin=sw/bin/django-admin.py
-project=$(shell basename `pwd`)
+project=flatties
 MAKE_MESSAGE=$(admin) makemessages --all --extension=html,py,txt
 COMPILE_MESSAGE=$(admin) compilemessages
 
@@ -43,11 +43,11 @@ mrproper: clean
 	$(MAKE) --directory=test mrproper
 	@find . -name '*.pyc' -or -name '*.pyo' -print0 | xargs -0 rm -vf
 
-strings: bootstrap
+strings: 
 	@cd $(project); for l in $(LANGUAGES); do if [ ! -d locale/$$l ]; then mkdir -pv locale/$$l; fi; done;
 	@cd $(project) && ../$(MAKE_MESSAGE);
 
-compile: bootstrap
+compile:
 	@cd $(project) && ../$(COMPILE_MESSAGE);
 
 languages: strings compile
