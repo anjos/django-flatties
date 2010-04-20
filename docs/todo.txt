@@ -1,0 +1,11 @@
+1. Find a way to show a preview to users entering contents in an admin page
+2. Fix the behavior on translating long blocks of text. We need a routine to
+break the contents in logical sequences of text, which are complete. Avoid the
+following scenarios:
+
+ a) In html text, that tags are broken and that words are broken
+ b) In normal text, that words are broken
+
+The current implementation just splits the text observing a maximum number of
+words that can be sent at a time.
+
