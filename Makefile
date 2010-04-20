@@ -11,6 +11,10 @@ project=$(shell basename `pwd`)
 MAKE_MESSAGE=$(admin) makemessages --all --extension=html,py,txt
 COMPILE_MESSAGE=$(admin) compilemessages
 
+# These are some instructions for sessions in vim
+VIM_SESSION=.session.vim
+edit=if [ -e $(VIM_SESSION) ]; then $(1) --noplugin -S $(VIM_SESSION); else echo "The file \`$(VIM_SESSION)' does not exist. Create one to use this rule."; fi
+
 .PHONY: test clean 
 
 .PHONY: clean mrproper generate_bootstrap bootstrap upgrade strings compile languages 
@@ -47,3 +51,9 @@ compile: bootstrap
 	@cd $(project) && ../$(COMPILE_MESSAGE);
 
 languages: strings compile
+
+vim:
+	@$(call edit,vim)
+
+gvim:
+	@$(call edit,gvim)

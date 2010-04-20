@@ -37,5 +37,3 @@ def restructuredtext(value):
         settings_overrides=docutils_settings)
     return raw(parts["fragment"])
 
-
-

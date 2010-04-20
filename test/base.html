@@ -1,7 +1,8 @@
+{% load flatties_tags %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>{{ object.title }}</title>
+    <title>{% get_title object LANGUAGE_CODE %}</title>
   </head>
 
   <body>
@@ -10,13 +11,50 @@
     <p style="font-size: 1.2em;">Current user is: <b>{{ user }}</b> / Site: <b>{{ site.domain }}</b> / Language code: <b>{{ LANGUAGE_CODE }}</b></p>
 
     <hr />
-
-    <h1>Page contents</h1>
     
-    {{ object.content }}
+    <h1>Original page "{{ object.language }}"</h1>
+
+    <p><b>Encoding</b>: {{ object.get_markup_display }}</p>
+
+    <p><b>Title</b>: {{ object.title }}</p>
+
+    <p><b>Original Contents</b>:</p>
+    <div style="padding:5px;background-color:#eee;border:1px gray solid;">
+    <pre>{{ object.content }}</pre>
+    </div>
+
+    <p><b>Filtered Contents</b>:</p>
+    <div style="padding:5px;background-color:#eee;border:1px gray solid;">
+    {% get_content object object.language %}
+    </div>
+
+    <hr />
+
+    <p><b>Available translations</b>: {{ object.pagetranslation_set.count }}</p>
+
+    {% for trans in object.pagetranslation_set.all %}
+    <hr />
+    
+    {% ifequal trans.language LANGUAGE_CODE %}<h1 style="color:red;">[context choice] {% else %}<h1>{% endifequal %}Translation for "{{ trans.language }}"</h1>
+
+    <p><b>Title</b>: {% get_title object trans.language %}</p>
+    
+    <p><b>Original Contents</b>:</p>
+    <div style="padding:5px;background-color:#eee;border:1px gray solid;">
+    <pre>{{ trans.content }}</pre>
+    </div>
+
+    <p><b>Filtered Contents</b>:</p>
+    <div style="padding:10px;background-color:#eee;border:1px gray solid;">
+    {% get_content object trans.language %}
+    </div>
+
+    {% endfor %}
+
+    <hr />
 
     <div class="footer">
-     <hr /><p>Automatically generated at {% now "r" %}</p>
+     <p>Automatically generated at {% now "r" %}</p>
     </div>
 
  </body>

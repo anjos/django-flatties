@@ -49,3 +49,55 @@ function translate(id) {
       }
       });
 }
+
+//breaks a string respecting html tags
+function break_string(s, max_length) {
+  var retval = new Array();
+  var current = 0;
+  while (current < s.length) {
+    var slice = s.substring(current, current + max_length);
+    current += max_length;
+    retval.push(slice);
+  }
+  return retval;
+}
+
+function translate_code(id) {
+  var hint = id.split("-");
+  var s_lang = get_google_language($("#id_language").val());
+  if (!s_lang) {
+    alert("Please select first a language for the base menu item!");
+    return;
+  }
+  var source = $("#id_" + hint[2]).val(); //get the source nav item value
+  var lang = get_google_language($("#id_"+hint[0]+"-"+hint[1]+"-language").val());
+  if (!lang) {
+    alert("Please select first a language for this item translation!");
+    return;
+  }
+  var type = $("#id_markup").val();
+  switch (type) {
+  case "R":
+    type = "html";
+    break;
+  default:
+    type = "text";
+  }
+  
+  //google poses a limitation on the number of characters per request
+  $("#id_" + id).val(""); //reset field contents
+  break_string(source, 1000).forEach(function(item) {
+      var content = new Object();
+      content.text = item; 
+      content.type = type;
+      google.language.translate(content, s_lang, lang, function(result) {
+        if (!result.error) {
+          $("#id_" + id).val($("#id_" + id).val() + fix_translation(result.translation));
+        }
+        else {
+          alert("Google Translate returned error (" + result.error.code + "):\n" + result.error.message);
+        }
+      })//lambda for translate()
+    });//lambda for source.forEach() 
+
+}

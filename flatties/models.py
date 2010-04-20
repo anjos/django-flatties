@@ -87,8 +87,8 @@ class Page(models.Model):
       elif markup == 'T': return textile(content)
       else: raise RuntimeError, 'Unknown markup (%s)' % markup
 
-    try: filter(self.markup, Template(self.pagetranslation_set.get(language=language).content).render(context))
-    except: filter(self.markup, Template(self.content).render(context))
+    try: return filter(self.markup, Template(self.pagetranslation_set.get(language=language).content).render(context))
+    except: return filter(self.markup, Template(self.content).render(context))
 
   class Meta:
       verbose_name = _('page')
