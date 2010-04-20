@@ -1,9 +1,28 @@
 [
   {
+    "pk": 3, 
+    "model": "flatties.page", 
+    "fields": {
+      "updated": "2010-04-20 17:41:44", 
+      "language": "en", 
+      "title": "About me", 
+      "url": "about", 
+      "template_name": "base.html", 
+      "markup": "R", 
+      "created": "2010-04-20 15:07:07", 
+      "sites": [
+        1
+      ], 
+      "content": "<div class=\"annotated_photo right\"><a href=\"http://picasaweb.google.com/anjos.at.work/ATLASFirstDayOfOperations\"><img src=\"{% url media 'project/img/andreanjos-at-atlas.jpg' %}\" border=\"0\" width=\"300\" height=\"225\" /></a>\r\n<p>This photo was taken during the start-up of LHC activities at the ATLAS Control Room, September 10th., 2008</p>\r\n</div>\r\n\r\n<h2>About me</h2>\r\n\r\n<p>My name is Andr\u00e9 (Rabello dos) Anjos. I presently work for the <a href=\"http://www.wisc.edu\">University of Wisconsin, Madison</a>, USA at <a href=\"http://www.cern.ch\">CERN</a>, Switzerland, as a Software Engineer for at the <a href=\"http://atlas.ch\">ATLAS experiment</a>. I'm responsible for the development and maintenance of various software packages for the experiment's Trigger and Data-Acquisition system.</p>\r\n\r\n<p>I started studying electronics and computers in 1994, when I joined the <a href=\"http://www.del.ufrj.br\">Electronics Engineering School</a> of the <a href=\"http://www.ufrj.br\">Federal University of Rio de Janeiro</a>. I finished my basic electronic engineering studies in 1999, my masters degree in 2001, finally getting a Ph.D. in Signal Processing in 2006. During this time I have been affiliated to the <a href=\"http://www.lps.ufrj.br\">Signal Processing Laboratory</a>. I have studied different subjects during all these years ranging from digital filters to pattern recognition. Most of my research time during school years was dedicated to <a href=\"http://en.wikipedia.org/wiki/Artificial_neural_network\">Artificial Neural Networks</a>. I have kept a record of <a href=\"\"><strong>all</strong></a> my publications in this website. You can access them through the links above.</p>\r\n\r\n<div class=\"annotated_photo left\"><a href=\"http://picasaweb.google.com/anjos.at.work/VisitOfTheBrazilianMinisterForScienceTechnologyAndInnovationAtCERN\"> <img src=\"{% url media 'project/img/andreanjos-minister.jpg' %}\" border=\"0\" width=\"300\" height=\"225\" /></a>\r\n<p>This photo was taken during the official visit of the brazilian Ambassador Minister for Science, Technology and Innovation, H.E. Mr. Ronaldo Mota Sardenberg, at CERN, July 23rd., 2002</p>\r\n</div>\r\n\r\n<p>Programming for me debutted in 1994, when I joined the university. I really love programming and spend large parts of my work time and a smaller fraction of my free time doing this. I enjoy simplicity and powerful designs. It is difficult to make something simple. It is far easier to design a complicated unmaintainable solution. You will find a <a href=\"\">few software projects</a> hosted in this website. Code will range from my thesis sources until the scripts for this website for instance. Take and use whatever fits you. There is nice code browser built-in so you can also inspect written code without downloading it.</p>\r\n\r\n<p>You can access my <a href=\"{% url media 'cv/cv.pdf' %}\">CV</a> here. If you are interested in code, you can check-out <a href=\"\">my repositories here</a>. Publications are available <a href=\"\">here</a>. Specifically, if you wonder how this website is hacked together, you should <a href=\"\">look here</a>. Here you will also find some <a href=\"\">photos</a> and <a href=\"\">videos</a> as well.</p>", 
+      "user": "X", 
+      "groups": []
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "flatties.page", 
     "fields": {
-      "updated": "2010-04-19 18:17:41", 
+      "updated": "2010-04-20 14:36:34", 
       "language": "en", 
       "title": "A test page", 
       "url": "test", 
@@ -16,6 +35,85 @@
       "content": "<p>This is a test.</p>\r\n\r\n<p>This is another paragraph.</p>", 
       "user": "X", 
       "groups": []
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "flatties.page", 
+    "fields": {
+      "updated": "2010-04-20 14:33:40", 
+      "language": "pt-br", 
+      "title": "Uma outra p\u00e1gina de teste", 
+      "url": "test2", 
+      "template_name": "base.html", 
+      "markup": "T", 
+      "created": "2010-04-20 12:04:38", 
+      "sites": [
+        1
+      ], 
+      "content": "Isto \u00e9 um par\u00e1grafo.\r\n\r\nIsto \u00e9 um outro par\u00e1grafo.\r\n\r\n* Aqui \u00e9 uma lista;\r\n* Este \u00e9 o segundo \u00edtem.", 
+      "user": "L", 
+      "groups": []
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "<p>Isto \u00e9 um teste.</p>\r\n\r\n<p>Isto \u00e9 um outro par\u00e1grafo.</p>", 
+      "page": 1, 
+      "language": "pt-br", 
+      "title": "Uma p\u00e1gina de teste"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "<p>Ceci est un test.</p>\r\n\r\n<p>Ceci est un autre paragraphe.</p>", 
+      "page": 1, 
+      "language": "fr", 
+      "title": "Une page de test"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "This is a paragraph.\r\n\r\nThis is another paragraph\r\n\r\n* This is a list;\r\n* This is a second item.", 
+      "page": 2, 
+      "language": "en", 
+      "title": "Another test page"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "Este es un p\u00e1rrafo.\r\n\r\nEste es otro p\u00e1rrafo.\r\n\r\n* He aqu\u00ed una lista;\r\n* Este es el segundo tema.", 
+      "page": 2, 
+      "language": "es", 
+      "title": "Otra p\u00e1gina de prueba"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "Ceci est un paragraphe.\r\n\r\nIl s'agit d'un autre paragraphe.\r\n\r\n* Voici une liste;\r\n* Il s'agit du deuxi\u00e8me point.", 
+      "page": 2, 
+      "language": "fr", 
+      "title": "Une autre page de test"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "flatties.pagetranslation", 
+    "fields": {
+      "content": "<p>Esta es una prueba.</p>\r\n\r\n<p>Este es otro p\u00e1rrafo.</p>", 
+      "page": 1, 
+      "language": "es", 
+      "title": "Una p\u00e1gina de prueba"
     }
   }
 ]
