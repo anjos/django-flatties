@@ -18,7 +18,7 @@ class TranslateTextarea(django.forms.widgets.Textarea):
 
   def render(self, name, value, attrs=None):
     v = super(TranslateTextarea, self).render(name, value, attrs)
-    v += u' <a href="#" onclick="translate_code(\'%s\');" title="%s"><img style="vertical-align:bottom;" src="http://www.google.com/options/icons/translate.gif" width="16" height="16"/></a>' % \
+    v += u' <a href="#" onclick="translate_text(\'%s\');" title="%s"><img style="vertical-align:bottom;" src="http://www.google.com/options/icons/translate.gif" width="16" height="16"/></a>' % \
         (name, ugettext(u'Suggest a translation using Google!'))
     
     return mark_safe(v)
