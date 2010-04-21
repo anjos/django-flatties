@@ -81,7 +81,6 @@ function check() {
     clearInterval(interval);
     //at this point, we just have to set the output
     if (trans_destination_field) {
-      alert(translated);
       trans_destination_field.val(translated.join("\n"));
     }
   }
